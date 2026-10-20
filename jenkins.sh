@@ -26,5 +26,14 @@ sudo apt install -y jenkins
 sudo service jenkins start
 sudo service jenkins status
 
-# STEP 7: Show the initial admin password
+# STEP 7: Wait for the initial admin password file to be generated (timeout after 30 seconds)
+echo "Waiting for Jenkins initialization..."
+for i in {1..30}; do
+    if [ -f /var/lib/jenkins/secrets/initialAdminPassword ]; then
+        break
+    fi
+    sleep 1
+done
+
+# STEP 8: Show the initial admin password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
