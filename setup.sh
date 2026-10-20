@@ -5,7 +5,7 @@ cat << EOF > .devcontainer/devcontainer.json
 {
 "name": "$Codespace_name",
 "features": {
-"ghcr.io/devcontainers/features/docker-in-docker:2":{}
+"ghcr.io/devcontainers/features/docker-in-docker:2.1.0":{}
 }
 }
 EOF

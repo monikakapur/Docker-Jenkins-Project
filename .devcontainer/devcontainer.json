@@ -1,6 +1,6 @@
 {
-"name": "$Codespace_name",
+"name": "",
 "features": {
-"ghcr.io/devcontainers/features/docker-in-docker:2":{}
+"ghcr.io/devcontainers/features/docker-in-docker:2.1.0":{}
 }
 }
