@@ -8,3 +8,4 @@ cat << EOF > .devcontainer/devcontainer.json
 "ghcr.io/devcontainers/features/docker-in-docker:2":{}
 }
 }
+EOF
