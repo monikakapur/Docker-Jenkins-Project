@@ -37,3 +37,16 @@ done
 
 # STEP 8: Show the initial admin password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+# STEP 9: Give the Jenkins user permission to use Docker
+sudo usermod -aG docker jenkins
+
+
+# STEP 10: Restart Jenkins to apply the new group membership
+sudo service jenkins restart
+
+
+# STEP 11: Verify Docker access as the Jenkins user
+sudo -H -u jenkins docker ps
+
+echo "Jenkins installation and Docker access setup completed."
