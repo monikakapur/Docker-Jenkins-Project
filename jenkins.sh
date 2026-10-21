@@ -38,17 +38,5 @@ done
 # STEP 8: Show the initial admin password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
-# STEP 9: Check Docker socket ownership and permissions
-echo "Checking Docker socket..."
-ls -l /var/run/docker.sock
-
-# STEP 10: Give Jenkins user permission to use Docker
-sudo usermod -aG docker jenkins
-
-# STEP 11: Restart Jenkins to apply the new group membership
-sudo service jenkins restart
-
-# STEP 12: Verify Docker access as the Jenkins user
-sudo -u jenkins docker ps
-
-echo "Docker Swarm init and Jenkins installation and Docker access setup completed and verified."
+# STEP 9: to make jenkins pipeline success
+chmod 777 /var/run/docker.sock
