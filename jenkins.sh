@@ -38,4 +38,6 @@ done
 # STEP 8: Show the initial admin password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
+sudo usermod -aG docker jenkins
+
 
