@@ -38,6 +38,4 @@ done
 # STEP 8: Show the initial admin password
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
-# STEP 9: to make jenkins pipeline success
-sudo service docker status
-sudo service docker start
+
