@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-sudo apt-get update
 mkdir -p .devcontainer
 cat << EOF > .devcontainer/devcontainer.json
 {
